@@ -7,7 +7,7 @@ resource "aws_instance" "web-server" {
     subnet_id = "${var.subnet_id}"
     associate_public_ip_address = true
     source_dest_check = false
-
+    user_data = "${file("install_wordpress.sh")}" 
 
     tags {
         Name = "Web Server"
