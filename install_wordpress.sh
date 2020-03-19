@@ -9,7 +9,7 @@ cd /tmp
 sudo curl -O https://wordpress.org/latest.tar.gz
 sudo tar xzvf latest.tar.gz
 sudo touch /tmp/wordpress/.htaccess
-mv /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php
+sudo mv /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php
 sudo mkdir /tmp/wordpress/wp-content/upgrade
 sudo cp -a /tmp/wordpress/. /var/www/wordpress
 sudo chown -R www-data:www-data /var/www/wordpress
